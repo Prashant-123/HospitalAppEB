@@ -45,7 +45,6 @@
                     android:layout_alignParentEnd="true"
                     android:id="@+id/logout_btn"
                     android:layout_alignParentTop="true"
-                    android:onClick="Help"
                     android:background="@color/transparent"
                     android:src="@drawable/ic_help" />
 
