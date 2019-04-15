@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="14dp"
+    android:layout_marginRight="14dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/room_card"
+            android:background="@drawable/gradient_sub_2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/subject_name"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/futura_medium"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:text="Room #21" />
+
+                <android.support.design.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    app:icon="@drawable/ic_move_right"
+                    app:strokeWidth="0dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_margin="0dp"
+                    app:iconPadding="5dp"
+                    app:iconSize="14dp"
+                    app:cornerRadius="20dp"
+                    android:textSize="12dp"
+                    android:text="Tap to View"
+                    android:textColor="@color/white"
+                    app:rippleColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    app:iconTint="@null"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/futura_medium"
+                    android:text="Number of Patients"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/batch_days"
+                    android:layout_weight="1"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="@font/futura_medium"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:text="2" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

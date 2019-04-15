@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_layout">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/app_bar"
+        android:gravity="center"
+        android:background="@color/transparent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="40dp"
+            app:cardElevation="10dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/raleway_medium"
+                    android:gravity="center"
+                    android:text="@string/hospital_name"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/logout_btn"
+                    android:layout_alignParentTop="true"
+                    android:onClick="Help"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_help" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </android.support.design.widget.AppBarLayout>
+
+</RelativeLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_hospital"
+            android:id="@+id/ic_icon"
+            android:padding="5dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ic_icon"
+            android:layout_alignTop="@id/ic_icon"
+            android:layout_alignBottom="@id/ic_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:fontFamily="@font/futura_medium"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="24dp"
+                android:text="Welcome to "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="A.B.C Hospital"
+                android:textColor="@color/black"
+                android:textSize="24dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="200dp"
+            android:background="@color/divider"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_margin="20dp">
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/rooms_btn"
+                android:layout_width="160dp"
+                android:layout_height="130dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                app:icon="@drawable/ic_rooms"
+                app:strokeWidth="0dp"
+                android:onClick="Rooms"
+                android:textColor="@color/black"
+                android:paddingLeft="40dp"
+                app:iconSize="80dp"
+                app:rippleColor="@color/black"
+                app:iconTint="@null" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rooms"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="130dp"
+                android:fontFamily="@font/open_sans_semibold"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_margin="20dp">
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/appoint_btn"
+                android:layout_width="160dp"
+                android:layout_height="130dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                app:icon="@drawable/ic_appointment"
+                app:strokeWidth="0dp"
+                android:paddingLeft="40dp"
+                app:iconSize="80dp"
+                app:rippleColor="@color/black"
+                app:iconTint="@null" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Book an Appointment"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="130dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/med_btn"
+                android:layout_width="160dp"
+                android:layout_height="130dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                app:icon="@drawable/ic_medicine"
+                app:strokeWidth="0dp"
+                android:textColor="@color/black"
+                android:paddingLeft="40dp"
+                app:iconSize="80dp"
+                app:rippleColor="@color/black"
+                app:iconTint="@null" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medicines"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="130dp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/doctors_btn"
+                android:layout_width="160dp"
+                android:layout_height="130dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                app:icon="@drawable/ic_doctor"
+                app:strokeWidth="0dp"
+                android:paddingLeft="40dp"
+                app:iconSize="80dp"
+                app:rippleColor="@color/black"
+                app:iconTint="@null" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Doctors"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="130dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
